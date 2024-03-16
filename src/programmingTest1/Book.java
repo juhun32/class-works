@@ -5,6 +5,7 @@ public class Book {
 	private int numberOfPages;
 	private int currentPage;
 	
+	// default constructor
 	public Book() {
 		this.name = "No Name Yet";
 		this.numberOfPages = 0;
@@ -20,7 +21,9 @@ public class Book {
 	}
 	
 	public void setNumberOfPages(int newNumberOfPages) {
-		this.numberOfPages = newNumberOfPages;
+		if (newNumberOfPages > 0 && newNumberOfPages >= this.currentPage) {
+			this.numberOfPages = newNumberOfPages;
+        }
 	}
 	
 	public int getNumberOfPages() {
@@ -28,7 +31,9 @@ public class Book {
 	}
 	
 	public void setCurrentPage(int newCurrentPage) {
-		this.currentPage = newCurrentPage;
+		if (newCurrentPage > 0 && newCurrentPage <= this.numberOfPages) {
+            this.currentPage = newCurrentPage;
+        }
 	}
 	
 	public int getCurrentPage() {
