@@ -20,17 +20,17 @@ public class BookDemo {
 			option = keyboard.nextInt();
 			
 			if (option == 1) {
-				System.out.print("What is the name of the book?: ");
+				System.out.println("What is the name of the book?: ");
 				String newName = keyboard.next();
 				myFavoriteBook.setName(newName);
 			} 
 			else if (option == 2) {
-				System.out.print("How many Pages in the book?: ");
+				System.out.println("What is the new number of pages in the book?: ");
 				int newNumberOfPages = keyboard.nextInt();
 				myFavoriteBook.setNumberOfPages(newNumberOfPages);
 			} 
 			else if (option == 3) {
-				System.out.print("What is the current page?: ");
+				System.out.println("What is the new current page?: ");
 				int newCurrentPage = keyboard.nextInt();
 				myFavoriteBook.setCurrentPage(newCurrentPage);
 			} 
@@ -49,3 +49,4 @@ public class BookDemo {
 		
 	}
 }
+
