@@ -1,4 +1,4 @@
-package programmingTest1;
+package ProgrammingTest;
 
 public class Book {
 	private String name;
