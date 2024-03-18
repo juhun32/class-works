@@ -23,7 +23,7 @@ public class Book {
 	public void setNumberOfPages(int newNumberOfPages) {
 		if (newNumberOfPages > 0 && newNumberOfPages >= this.currentPage) {
 			this.numberOfPages = newNumberOfPages;
-        }
+		}
 	}
 	
 	public int getNumberOfPages() {
@@ -32,8 +32,8 @@ public class Book {
 	
 	public void setCurrentPage(int newCurrentPage) {
 		if (newCurrentPage > 0 && newCurrentPage <= this.numberOfPages) {
-            this.currentPage = newCurrentPage;
-        }
+			this.currentPage = newCurrentPage;
+		}
 	}
 	
 	public int getCurrentPage() {
