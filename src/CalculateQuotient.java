@@ -39,5 +39,7 @@ public class CalculateQuotient{
       
       double result = nume / deno;
       System.out.println("result: " + result);
+      
+      sc.close();
    }
 }

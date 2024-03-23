@@ -12,5 +12,7 @@ public class AddFiveNumbers {
          total = total + number;
       }
       System.out.println("The total of all five numbers is: " + total);
+
+      keyboard.close();
    }
 }

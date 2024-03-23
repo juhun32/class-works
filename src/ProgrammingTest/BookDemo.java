@@ -46,6 +46,8 @@ public class BookDemo {
 				System.out.println("Error!");
 			}
 		} while(option != 5);
+
+		keyboard.close();
 		
 	}
 }
