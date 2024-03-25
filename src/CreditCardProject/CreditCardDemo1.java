@@ -8,8 +8,8 @@ public class CreditCardDemo1 {
 		CreditCard.increaseCreditLimit(700.00);
 		System.out.println("The credit limit for all credit card is: $" + CreditCard.getCreditLimit());
 		
-		CreditCard myCard = new CreditCard();
-		CreditCard yourCard = new CreditCard();
+		//CreditCard myCard = new CreditCard();
+		//CreditCard yourCard = new CreditCard();
 	}
 
 }

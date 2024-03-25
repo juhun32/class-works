@@ -33,11 +33,10 @@ public class TicketArrayProgram {
 		Scanner keyboard = new Scanner(System.in);
 		int tempNum = 0;
 		for (int i = 0; i < someArray.length; i++) {
-			System.out.print("The number of tickets sold for day " + (i + 1) + "?: ");
+			System.out.println("The number of tickets sold for day " + (i + 1) + "?: ");
 			tempNum = keyboard.nextInt();
 			someArray[i] = tempNum;
 		}
-		keyboard.close();
 	}
 
 	/*
