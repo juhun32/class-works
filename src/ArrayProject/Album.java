@@ -1,5 +1,7 @@
 package ArrayProject;
 
+//import java.util.Arrays;
+
 public class Album {
 	// instance variables
 	private String artist;
@@ -8,7 +10,6 @@ public class Album {
 	private int[] songTimeArray;
 	private int numberOfSongs;
 	private int runningTime;
-	private int index = 0;
 
 	// constructor
 	public Album() {
@@ -37,19 +38,32 @@ public class Album {
 	}
 
 	public void addSongs(String songName, int songTime) {
-		if (songTime > 0) {
-			songNameArray[index] = songName;
-			songTimeArray[index] = songTime;
+		if (songTime > 0 && numberOfSongs < songNameArray.length) {
+			songNameArray[numberOfSongs] = songName;
+			songTimeArray[numberOfSongs] = songTime;
 			runningTime += songTime;
-			index++;
+			numberOfSongs++;
 		}
 	}
 
-	public String[] getSongs() {
-		return songNameArray;
+	public String getSongs() {
+		String songs = "";
+		for (int i = 0; i < numberOfSongs; i++) {
+			songs = songs + "\n" + songNameArray[i];
+		}
+		// return Arrays.toString(songNameArray);
+		return songs;
 	}
 
 	public int getRunningTime() {
 		return runningTime;
+	}
+
+	public String getAllSongInformation() {
+		String allSongInformation = "";
+		for (int i = 0; i < numberOfSongs; i++) {
+			allSongInformation = allSongInformation + "\n" + "Name: " + songNameArray[i] + ", Time: " + songTimeArray[i] + " minutes";
+		}
+		return allSongInformation;
 	}
 }
